@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>Blog de Antón</title>
+	</head>
+
+	<body>
+		<header> 
+			<h1>Blog de <em>Antón</em></h1>
+			<h2>para relajarse</h2>
+			<p><h5>Las Entidades HTML utilizan el formato &código_de_la_entidad></h5></p>
+			<p><h5>La etiqueta &lt;hr&gt; se utiliza para añadir un separador (una línea horizontal)></h5></p>
+			<hr>	
+				<div id="navegacion">
+					<!Versión pre HTML5 para navegación>
+					<ul>
+						<!UL: lista donde el orden no es importante>
+						<li>enlace ul: Contacto</li>
+						<li>enlace ul: Música</li>
+						<li>enlace ul: Videos</li>
+					</ul>
+				</div>
+				<nav>
+					<!Versión HTML5 para navegación>
+					<!OL: lista donde el orden sí es importante>
+					<ol>
+						<li>enlace ol 1</li>
+						<li>enlace ol 2</li>
+						<li>enlace ol 3</li>					
+					</ol>
+					<ul>
+						<li>enlace ul: Contacto</li>
+						<li>enlace ul: Música</li>
+						<li>enlace ul: Videos</li>
+					</ul>
+				</nav>
+				<hr>
+		</header>
+
+			<h2>Contenido de la Página</h2>
+			<p>Es <strong>muy importante</strong> cerrar las etiquetas<br> anidadas en orden: <strong>primero la última abierta</strong> </p>
+
+			<!Enaces o Hipervínculos>
+			<h2>Enlaces o Hipervínculos</h2>
+				<nav>
+				<!Absolutos:url completa>
+					<ul>
+						<li><a href="//c:/users/anton/desktop/img/imagen1.jpg">Enlace a Imagen 1</a></li>
+				<!Relativos: a la posición de nuestra url> 
+						<li><a href="img/imagen2.jpg">Enlace a Imagen 2</a></li>
+						<li><a href="../imagen3.jpg">Enlace a Imagen 3</a></li>
+					</ul>
+				</nav>
+
+				<!Ancla o anchor>
+				<nav>
+					<ol>
+						<li><a href="#leccion1">Lección 1</a></li>
+						<li><a href="#leccion2">Lección 2</a></li>
+						<li><a href="#leccion3">Lección 3</a></li>
+					</ol>
+				</nav>
+				<hr>
+
+				<!Tablas>
+				<table>
+					<tr>
+						<td>Fila 1 Columna 1</td>
+						<td>Fila 1 Columna 2</td>
+					</tr>
+					<tr>
+						<td>Fila 2 Columna 1</td>
+						<td>Fila 2 Columna 2</td>
+					</tr>
+				</table>
+				<br>
+				<table>
+					<tr>
+						<td>Fila 1, columna 1</td>
+						<td colspan="3"> Fila 1, columnas 2, 3 y 4</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Fila 2, columna 1 + Fila 3, columna 1</td>
+						<td>Fila 2 columna 2</td>
+						<td>Fila 2 columna 3</td>
+						<td>Fila 2 columna 4</td>
+					</tr>
+					<tr>
+						<td>Fila 3 columna 2</td>
+						<td>Fila 3 columna 3</td>
+						<td>Fila 3 columna 4</td>
+					</tr>
+				</table>
+				<br><hr><br>
+				<form action="miScript.php" method="GET">
+					<label for="to">Para:</label>
+						<input id="to" type="email" placeholder="tu@correo.com>
+
+					<label for="topic">Temática: </label>
+					<select id="topic" name="topic">
+						<option>-- Elige un tema --</option>
+						<option value="proposal">Propuesta</option>
+						<option value="report">Reporte</option>
+						<option value="other">Otro</option>
+					</select>
+
+					<label for="subject">Asunto: </label>
+						<input id="subject" name="subject" type="text" value="Formulario de contacto" readonly>
+					<br><br>
+					<label for="body">Cuerpo:</label>
+						<textarea id="body" name="body"></textarea>
+
+					<button type="submit">Enviar</button>
+					<button type="reset">Reset</button>
+				</form>
+				<br>
+				<hr>
+				<hr>
+				<br>
+				<form action="miScript.text" method="GET">
+					<label for="Formulario">Formulario de </label>
+					<input id="Formulario" type="text" name="Form" value="Datos del Titular" readonly><br><br>
+
+					<label for="Empresa">Empresa</label>
+					<input id="Empresa" type="text" name="Company">
+
+					<label for="Para"> Para</label>
+					<input id="Para" type="email" name="To" placeholder="tu@correo.com>
+
+					<label for="Cargo"> Funciones</label>
+					<select id="Cargo" name="Position">
+						<option>-- Posicion Actual --</option>
+						<option value="Directivo">Directivo</option>
+						<option value="Gerente">Gerente</option>
+						<option value="Jefe de Proyecto">Jefe de Proyecto</option>
+						<option value="Analista Funcional">Analista Funcional</option>
+						<option value="Analista Orgánico">Analista Orgánico</option>
+						<option value="Programador">Programador</option>
+					</select><br><br>
+					<label for="Comentarios">Comentarios</label><br>
+					<textarea id="Comentarios" name="Comments"></textarea>
+
+					<button type="submit">Grabar</button>
+					<button type="reset">Borrar</button>
+				</form>
+				<br><br>
+				<hr><br>
+				<!Imágenes>
+				<img src="img/imagen1.jpg" alt="Prueba con imagen">
+				
+				<h2 id="leccion1">Lección 1:</h2>
+				<h4>(Aqui empieza la Lección 1)</h4>
+
+				<img src="img/imagen2.jpg" alt="Prueba con imagen">
+
+				<h2 id="leccion2">Lección 2:</h2>
+				<h4>(Aqui empieza la Lección 2)</h4>
+
+				<img src="../imagen3.jpg" alt="Prueba con imagen">
+
+				<h2 id="leccion3">Lección 3:</h2>
+				<h4>(Aqui empieza la Lección 3)</h4>
+
+				<img src="img/imagen3.jpg" alt="Prueba con imagen">
+				
+		<footer>
+			<h3>¿Les ha gustado?</h3>
+			<p>Blog de <em>Antón</em> realizado para practicar con HTML5</p>
+		</footer>
+	</body>
+</html>
